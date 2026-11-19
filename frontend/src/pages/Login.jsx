@@ -1,4 +1,5 @@
 import logo from "../assets/Logo.svg"; // Logo.svg 위치에 맞게 경로 수정해주세요
+import { Link } from "react-router";
 
 export default function Login() {
   return (
@@ -34,9 +35,11 @@ export default function Login() {
           <button type="button" className="login__next">
             다음
           </button>
-          <button type="button" className="login__signup">
-            회원가입
-          </button>
+          <Link to="/signup">
+            <button type="button" className="login__signup">
+              회원가입
+            </button>
+          </Link>
         </div>
       </form>
     </main>
